@@ -1,0 +1,22 @@
+<h1 style="text-align:center;">Search Hot Girls</h1>
+
+<div>Name: <input type="text" ng-model="form.name"></div>
+<div>Age: <input type="text" ng-model="form.age"></div>
+<div>Facebook: <input type="text" ng-model="form.facebook"></div>
+<div>Password: <input type="text" ng-model="form.password"></div>
+<input type="button" ng-click="search()" value="Search">
+
+<table border="1" style="width: 100%;">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Facebook</th>
+    <th>Password</th>
+  </tr>
+  <tr ng-repeat="girl in girls">
+    <td>{{girl.name}}</td>
+    <td>{{girl.age}}</td>
+    <td>{{girl.facebook}}</td>
+    <td>{{girl.password}}</td>
+  </tr>
+</table>
